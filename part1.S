@@ -37,7 +37,7 @@ _start: # entry point
 	
 	beq	t1, x0, _start;
 
-i_q_full:
+i_q_full: #Filling up the issue queue with a bunch of div commands
 	li	t1, 17;
 	li	t2, 297;
 	div	t3, t2, t1;
