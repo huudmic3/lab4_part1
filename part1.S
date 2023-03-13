@@ -35,7 +35,7 @@ _start: # entry point
 	addi	t4, t5, 4;
 	add	t5, t3, t1;		# Write-Read Hazard
 	
-	beq	t1, x0, _start;
+	beq	t1, x0, _start;		# Branch Mispredict
 
 i_q_full: #Filling up the issue queue with a bunch of div commands
 	li	t1, 17;
